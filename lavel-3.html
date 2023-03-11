@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice problem three</title>
+    <style>
+        .field-body {
+            background-color: black;
+            width: 600px;
+            border-radius: 20px;
+            padding: 15px;
+            margin: auto;
+        }
+        
+        .input-field {
+            width: 50%;
+            padding: 10px 10px;
+            margin-right: 10px;
+        }  
+        .btn {
+            padding: 10px 15px;
+            background-color: rgb(119, 4, 201);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+        }
+        .filed-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="field-body">
+        <h1 style="text-align: center; color: #fff;">Please Contact Me</h1>
+        <div>
+            <p style="color: #fff; font-size: 18px;">Name</p>
+            <div class="filed-container">
+                <input class="input-field" id="name-field" type="text">
+                <button onclick="deleteName()" class="btn">Delete Name</button>
+                <button onclick="sendName()" class="btn">Send Name</button>
+            </div>
+        </div>
+        <div>
+            <p style="color: #fff; font-size: 18px;">Email</p>
+            <div class="filed-container">
+                <input class="input-field" id="email-field" type="email">
+                <button onclick="deleteEmail()" class="btn">Delete Email</button>
+                <button onclick="sendEmail()" class="btn">Send Email</button>
+            </div>
+        </div>
+        <div>
+            <p style="color: #fff; font-size: 18px;">Messgae</p>
+            <div class="filed-container">
+                <input class="input-field" id="message-field" type="text">
+                <button onclick="deleteMessage()" class="btn">Delete Message</button>
+                <button onclick="sendMessage()" class="btn">Send Message</button>
+            </div>
+        </div>
+        <div>
+            <button onclick="SendAll()" style="text-align: center; display: inline-block; margin: auto; padding: 15px 35px; font-size: 20px; border-radius: 35px;" class="btn">Send</button>
+            <button onclick="clearAll()" style="text-align: center; display: inline-block; margin: auto; padding: 15px 35px; font-size: 20px; border-radius: 35px;" class="btn">Reset</button>
+        </div>
+    </div>
+
+
+    <script src="js/lavel-3.js"></script>
+</body>
+</html>
